@@ -53,6 +53,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2d39d1e3c607874388b5853eb98b20d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TimeToDecay: 3
+  Radius: 1
 --- !u!114 &114769373300568490
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -67,7 +69,7 @@ MonoBehaviour:
   LightmaskPrefab: {fileID: 212908402186995418, guid: 8f1d2a07a0614a048bf9753bc1e06df2,
     type: 2}
   Radius: 0
-  Opacity: 0
+  Opacity: 1
 --- !u!212 &212615649916867002
 SpriteRenderer:
   m_ObjectHideFlags: 1

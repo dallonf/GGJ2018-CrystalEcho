@@ -6,7 +6,7 @@ public class LightSource : MonoBehaviour
 {
 	public SpriteRenderer LightmaskPrefab;
 	public float Radius = 0;
-	public float Opacity = 0;
+	public float Opacity = 1;
 
 	private SpriteRenderer lightmask;
 

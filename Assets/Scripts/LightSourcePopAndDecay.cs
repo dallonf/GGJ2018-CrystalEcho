@@ -2,15 +2,36 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LightSourcePopAndDecay : MonoBehaviour {
+[RequireComponent(typeof(LightSource))]
+public class LightSourcePopAndDecay : MonoBehaviour
+{
+	private LightSource lightSource;
+	public float TimeToDecay = 3;
+	public float Radius;
 
-	// Use this for initialization
-	void Start () {
-		
+	private float currentTime = 0;
+
+	void Awake()
+	{
+		lightSource = GetComponent<LightSource>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+	void Update()
+	{
+		if (currentTime > 0)
+		{
+			currentTime -= Time.deltaTime;
+			lightSource.Radius = Mathf.Lerp(0, Radius, currentTime / TimeToDecay);
+		}
+		else if (currentTime < 0)
+		{
+			lightSource.Radius = 0;
+			currentTime = 0;
+		}
+	}
+
+	public void Pop()
+	{
+		currentTime = TimeToDecay;
 	}
 }
