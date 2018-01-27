@@ -80,30 +80,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3170d2873bf60546b23a28e0ebd9dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Fingers:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  Fingers: []
   MeidanSpeed: 6
   Variance: 0.05
 --- !u!114 &114630230306722900
