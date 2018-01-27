@@ -10,18 +10,17 @@ public class PlayerMover : MonoBehaviour {
 
 	void Start () 
 	{
-		movement = new Vector3 ();
+		movement = new Vector3 (0f, 0f, 0f);
 	}
 
 	void Update ()
 	{
+		movement.Set(0f, 0f, 0f);
+
 		if (Input.GetKey (KeyCode.W) || Input.GetKey (KeyCode.UpArrow))
 		{
 			transform.position += Vector3.up * speed * Time.deltaTime;
-
-//			movement.y += Input.GetAxisRaw ("Vertical");
 			movement += Vector3.up;
-
 		}
 
 		if (Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.LeftArrow)) 
@@ -48,8 +47,7 @@ public class PlayerMover : MonoBehaviour {
 			movement.y,
 			movement.x
 		) * Mathf.Rad2Deg - 90;
-//		transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-		transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.AngleAxis(angle, Vector3.forward), speed / 20);
+		transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.AngleAxis(angle, Vector3.down), speed / 20);
 	}
 }
