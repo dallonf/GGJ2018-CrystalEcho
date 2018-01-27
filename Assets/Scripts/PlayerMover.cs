@@ -41,7 +41,7 @@ public class PlayerMover : MonoBehaviour {
 
 		movement = movement.normalized;
 
-//		transform.rotation = Quaternion.LookRotation(movement);
+		Debug.Log ("movement vector to string: " + movement.ToString ());
 
 		transform.rotation = Quaternion.Euler(movement);
 	}
