@@ -7,11 +7,20 @@ using UnityEngine.EventSystems;
 public class TestPlayer : MonoBehaviour
 {
 	private KnowledgeOwner knowledgeOwner;
+	public new Camera camera;
 	public KnowableObject Tower;
 
 	void Awake()
 	{
 		knowledgeOwner = GetComponent<KnowledgeOwner>();
+	}
+
+	void Update()
+	{
+		// Move to mouse position
+		var targetPosition = camera.ScreenToWorldPoint(Input.mousePosition);
+		targetPosition.z = 0;
+		transform.position = targetPosition;
 	}
 
 	void OnGUI()
@@ -40,8 +49,9 @@ public class TestPlayer : MonoBehaviour
 		GUILayout.EndVertical();
 
 		// handle events after rendering UI, to avoid modifying the list
-		if (pingThisObj) {
-			ExecuteEvents.Execute<IPingable>(pingThisObj.gameObject, null, (x,y) => x.OnPing(knowledgeOwner));
+		if (pingThisObj)
+		{
+			ExecuteEvents.Execute<IPingable>(pingThisObj.gameObject, null, (x, y) => x.OnPing(knowledgeOwner));
 		}
 	}
 }

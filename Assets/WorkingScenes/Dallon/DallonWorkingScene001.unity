@@ -381,11 +381,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1176373911 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4087809561137384, guid: 9a52226d397d8a848aca7d28077af75a,
-    type: 2}
-  m_PrefabInternal: {fileID: 2130181685}
 --- !u!1 &1443725881
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,6 +391,7 @@ GameObject:
   - component: {fileID: 1443725884}
   - component: {fileID: 1443725883}
   - component: {fileID: 1443725882}
+  - component: {fileID: 1443725885}
   m_Layer: 0
   m_Name: TestPlayer
   m_TagString: Untagged
@@ -427,6 +423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 241cf65cd3a3c8f4c8f006637291244e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 1160099237}
   Tower: {fileID: 652391751}
 --- !u!4 &1443725884
 Transform:
@@ -441,53 +438,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1954179986
-Prefab:
+--- !u!212 &1443725885
+SpriteRenderer:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4344937982490034, guid: 36c64b364bfc3e54e8e489f64b444bea, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -6.8823795
-      objectReference: {fileID: 0}
-    - target: {fileID: 4344937982490034, guid: 36c64b364bfc3e54e8e489f64b444bea, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.18126053
-      objectReference: {fileID: 0}
-    - target: {fileID: 4344937982490034, guid: 36c64b364bfc3e54e8e489f64b444bea, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.080940865
-      objectReference: {fileID: 0}
-    - target: {fileID: 4344937982490034, guid: 36c64b364bfc3e54e8e489f64b444bea, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4344937982490034, guid: 36c64b364bfc3e54e8e489f64b444bea, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4344937982490034, guid: 36c64b364bfc3e54e8e489f64b444bea, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4344937982490034, guid: 36c64b364bfc3e54e8e489f64b444bea, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4344937982490034, guid: 36c64b364bfc3e54e8e489f64b444bea, type: 2}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114094006361430754, guid: 36c64b364bfc3e54e8e489f64b444bea,
-        type: 2}
-      propertyPath: PointAt
-      value: 
-      objectReference: {fileID: 1176373911}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 36c64b364bfc3e54e8e489f64b444bea, type: 2}
-  m_IsPrefabParent: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1443725881}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: ac871e29b64343f419fb7151a133ba19, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.28, y: 1.28}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1001 &2130181685
 Prefab:
   m_ObjectHideFlags: 0
