@@ -18,7 +18,10 @@ public class PlayerMover : MonoBehaviour {
 		if (Input.GetKey (KeyCode.W) || Input.GetKey (KeyCode.UpArrow))
 		{
 			transform.position += Vector3.up * speed * Time.deltaTime;
+
+//			movement.y += Input.GetAxisRaw ("Vertical");
 			movement += Vector3.up;
+
 		}
 
 		if (Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.LeftArrow)) 
@@ -43,6 +46,8 @@ public class PlayerMover : MonoBehaviour {
 
 		Debug.Log ("movement vector to string: " + movement.ToString ());
 
-		transform.rotation = Quaternion.Euler(movement);
+		transform.rotation = Quaternion.Euler(movement.x, movement.y, 0.0f);
+
+		Debug.Log ("transform.rotation after quaternion = " + transform.rotation.ToString ());
 	}
 }
