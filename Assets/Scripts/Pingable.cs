@@ -23,5 +23,6 @@ public class Pingable : MonoBehaviour, IPingable
     knowledge.Add(knowableObject);
     knowledge.AddRange(knowableObject.Neighbors);
     source.GainKnowledge(knowledge);
+    source.ReceivePong(knowableObject);
   }
 }
