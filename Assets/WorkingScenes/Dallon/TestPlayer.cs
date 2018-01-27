@@ -16,19 +16,32 @@ public class TestPlayer : MonoBehaviour
 
 	void OnGUI()
 	{
+		KnowableObject pingThisObj = null;
 		GUILayout.BeginVertical();
 		GUILayout.Label("Known objects:");
 		foreach (var knownObject in knowledgeOwner.KnownObjects)
 		{
-			GUILayout.Label(knownObject.name);	
+			GUILayout.BeginHorizontal();
+			GUILayout.Label(knownObject.name);
+			if (ExecuteEvents.CanHandleEvent<IPingable>(knownObject.gameObject))
+			{
+				if (GUILayout.Button("Ping"))
+				{
+					pingThisObj = knownObject;
+				}
+			}
+			GUILayout.EndHorizontal();
 		}
-		if (knowledgeOwner.KnownObjects.Count == 0) {
+		if (knowledgeOwner.KnownObjects.Count == 0)
+		{
 			GUILayout.Label("- nothing");
 		}
 		GUILayout.Space(20);
-		if (GUILayout.Button("Ping Tower")) {
-			ExecuteEvents.Execute<IPingable>(Tower.gameObject, null, (x, y) => x.OnPing(knowledgeOwner));
-		}
 		GUILayout.EndVertical();
+
+		// handle events after rendering UI, to avoid modifying the list
+		if (pingThisObj) {
+			ExecuteEvents.Execute<IPingable>(pingThisObj.gameObject, null, (x,y) => x.OnPing(knowledgeOwner));
+		}
 	}
 }
