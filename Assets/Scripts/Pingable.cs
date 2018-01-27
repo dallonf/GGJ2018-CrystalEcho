@@ -1,28 +1,29 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
 public interface IPingable : IEventSystemHandler
 {
-  void OnPing(KnowledgeOwner source);
+  void Ping(KnowledgeOwner source);
 }
 
 [RequireComponent(typeof(KnowableObject))]
 public class Pingable : MonoBehaviour, IPingable
 {
+  [System.Serializable]
+  public class PingEvent : UnityEvent<KnowledgeOwner> { }
   private KnowableObject knowableObject;
+  public PingEvent OnPing;
 
   private void Awake()
   {
     knowableObject = GetComponent<KnowableObject>();
   }
 
-  public void OnPing(KnowledgeOwner source)
+  public void Ping(KnowledgeOwner source)
   {
-    var knowledge = new List<KnowableObject>();
-    knowledge.Add(knowableObject);
-    knowledge.AddRange(knowableObject.Neighbors);
-    source.GainKnowledge(knowledge);
+    OnPing.Invoke(source);
     source.ReceivePong(knowableObject);
   }
 }

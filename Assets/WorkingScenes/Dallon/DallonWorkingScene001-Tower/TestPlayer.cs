@@ -51,7 +51,7 @@ public class TestPlayer : MonoBehaviour
 		// handle events after rendering UI, to avoid modifying the list
 		if (pingThisObj)
 		{
-			ExecuteEvents.Execute<IPingable>(pingThisObj.gameObject, null, (x, y) => x.OnPing(knowledgeOwner));
+			ExecuteEvents.Execute<IPingable>(pingThisObj.gameObject, null, (x, y) => x.Ping(knowledgeOwner));
 		}
 	}
 }
