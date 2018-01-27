@@ -18,7 +18,10 @@ public class PlayerMover : MonoBehaviour {
 		if (Input.GetKey (KeyCode.W) || Input.GetKey (KeyCode.UpArrow))
 		{
 			transform.position += Vector3.up * speed * Time.deltaTime;
+
+//			movement.y += Input.GetAxisRaw ("Vertical");
 			movement += Vector3.up;
+
 		}
 
 		if (Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.LeftArrow)) 
@@ -41,8 +44,12 @@ public class PlayerMover : MonoBehaviour {
 
 		movement = movement.normalized;
 
-		Debug.Log ("movement vector to string: " + movement.ToString ());
+		var angle = Mathf.Atan2(
+			movement.y,
+			movement.x
+		) * Mathf.Rad2Deg - 90;
+//		transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-		transform.rotation = Quaternion.Euler(movement);
+		transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.AngleAxis(angle, Vector3.forward), speed / 20);
 	}
 }
