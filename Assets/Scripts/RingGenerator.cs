@@ -10,6 +10,9 @@ public class RingGenerator : MonoBehaviour
 	public int Segments = 8;
 	private LineRenderer lineRenderer;
 
+	private float lastRadius;
+	private float lastSegments;
+
 	void Awake()
 	{
 		lineRenderer = GetComponent<LineRenderer>();
@@ -17,21 +20,37 @@ public class RingGenerator : MonoBehaviour
 
 	void Start()
 	{
-		lineRenderer.positionCount = Segments;
-		var positions = new Vector3[lineRenderer.positionCount];
-		var fullCircle = Mathf.PI * 2;
-		for (int i = 0; i < lineRenderer.positionCount; i++)
-		{
-			var index = i % Segments;
-			var percentOfCircle = (float)index / Segments;
-			var radians = fullCircle * percentOfCircle;
-			positions[i] = new Vector3(Mathf.Sin(radians), Mathf.Cos(radians), 0);
-		}
-		lineRenderer.SetPositions(positions);
+		GeneratePoints();
 	}
 
 	void Update()
 	{
+		if (Radius != lastRadius || Segments != lastSegments)
+		{
+			GeneratePoints();
+		}
+	}
 
+	private void GeneratePoints()
+	{
+		lineRenderer.positionCount = Segments + 1;
+		float x;
+		float y;
+		float z = 0f;
+
+		float angle = 20f;
+
+		for (int i = 0; i < (Segments + 1); i++)
+		{
+			x = Mathf.Sin(Mathf.Deg2Rad * angle) * Radius;
+			y = Mathf.Cos(Mathf.Deg2Rad * angle) * Radius;
+
+			lineRenderer.SetPosition(i, new Vector3(x, y, z));
+
+			angle += (360f / Segments);
+		}
+
+		lastRadius = Radius;
+		lastSegments = Segments;
 	}
 }
