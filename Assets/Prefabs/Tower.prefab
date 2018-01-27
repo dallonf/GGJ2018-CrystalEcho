@@ -75,6 +75,9 @@ GameObject:
   - component: {fileID: 114027601973821628}
   - component: {fileID: 114630230306722900}
   - component: {fileID: 114369196541175052}
+  - component: {fileID: 114661085386281228}
+  - component: {fileID: 114798601262090532}
+  - component: {fileID: 114178980941957372}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -191,9 +194,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1431830562007980}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 65.21362, y: 51.919556, z: 0}
-  m_LocalScale: {x: 40, y: 40, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.27, y: 0.08, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224345216576101122}
   - {fileID: 224325729712376762}
@@ -228,7 +231,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c70b84189fb2b994f97752e5c979feec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Neighbors: []
+  Neighbors:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &114097993505286130
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -360,6 +365,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114178980941957372
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1431830562007980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2d39d1e3c607874388b5853eb98b20d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Config: {fileID: 11400000, guid: b5bd4b1192beb684d8ad827af9916474, type: 2}
 --- !u!114 &114203522523816824
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -522,6 +539,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 424c5fb05bdee9c489054780d7d50577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnPing:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114178980941957372}
+        m_MethodName: Pop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114661085386281228}
+        m_MethodName: LightFingers
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Pingable+PingEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!114 &114631566103434658
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -574,6 +618,20 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114661085386281228
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1431830562007980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3170d2873bf60546b23a28e0ebd9dcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Fingers: []
+  MeidanSpeed: 6
+  Variance: 0.05
 --- !u!114 &114773394077600644
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -601,6 +659,21 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114798601262090532
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1431830562007980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 434a739cdcbb1d14a8e253fd39499062, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LightmaskPrefab: {fileID: 212908402186995418, guid: 8f1d2a07a0614a048bf9753bc1e06df2,
+    type: 2}
+  Radius: 0
+  Opacity: 1
 --- !u!114 &114825158019457900
 MonoBehaviour:
   m_ObjectHideFlags: 1
