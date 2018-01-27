@@ -8,6 +8,7 @@ public class RingGenerator : MonoBehaviour
 {
 	public float Radius = 1;
 	public int Segments = 8;
+	public float Alpha = 1;
 	private LineRenderer lineRenderer;
 
 	private float lastRadius;
@@ -29,6 +30,15 @@ public class RingGenerator : MonoBehaviour
 		{
 			GeneratePoints();
 		}
+		UpdateAlpha();
+	}
+
+	private void UpdateAlpha()
+	{
+		if(!Application.isPlaying) return;
+		Color currentColor = lineRenderer.material.color;
+		currentColor.a = Alpha;
+		lineRenderer.material.color = currentColor;
 	}
 
 	private void GeneratePoints()
