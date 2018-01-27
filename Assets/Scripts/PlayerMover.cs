@@ -44,10 +44,10 @@ public class PlayerMover : MonoBehaviour {
 
 		movement = movement.normalized;
 
-		Debug.Log ("movement vector to string: " + movement.ToString ());
-
-		transform.rotation = Quaternion.Euler(movement.x, movement.y, 0.0f);
-
-		Debug.Log ("transform.rotation after quaternion = " + transform.rotation.ToString ());
+		var angle = Mathf.Atan2(
+			movement.y,
+			movement.x
+		) * Mathf.Rad2Deg - 90;
+		transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 	}
 }
