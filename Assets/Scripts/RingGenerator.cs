@@ -22,6 +22,7 @@ public class RingGenerator : MonoBehaviour
 	void Start()
 	{
 		GeneratePoints();
+		UpdateAlpha();
 	}
 
 	void Update()
