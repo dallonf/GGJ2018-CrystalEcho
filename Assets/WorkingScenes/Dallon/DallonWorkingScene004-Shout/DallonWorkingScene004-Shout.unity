@@ -441,10 +441,11 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1443725884}
-  - component: {fileID: 1443725883}
+  - component: {fileID: 1443725887}
   - component: {fileID: 1443725882}
   - component: {fileID: 1443725885}
   - component: {fileID: 1443725886}
+  - component: {fileID: 1443725883}
   m_Layer: 0
   m_Name: TestPlayer
   m_TagString: Untagged
@@ -489,11 +490,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1443725881}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 241cf65cd3a3c8f4c8f006637291244e, type: 3}
+  m_Script: {fileID: 11500000, guid: 0214a9590dc1d094691d934e67787207, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 1160099237}
-  Tower: {fileID: 652391751}
 --- !u!4 &1443725884
 Transform:
   m_ObjectHideFlags: 0
@@ -563,6 +563,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prefab: {fileID: 114094006361430754, guid: 36c64b364bfc3e54e8e489f64b444bea, type: 2}
+--- !u!114 &1443725887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1443725881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff48175dd4074ce43bd6076ca7ba86aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1534773443
 Prefab:
   m_ObjectHideFlags: 0
