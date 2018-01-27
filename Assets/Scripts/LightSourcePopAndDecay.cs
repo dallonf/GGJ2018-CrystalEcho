@@ -20,7 +20,10 @@ public class LightSourcePopAndDecay : MonoBehaviour
 		if (currentTime > 0)
 		{
 			currentTime -= Time.deltaTime;
-			lightSource.Radius = Mathf.Lerp(0, Config.Radius, currentTime / Config.DecayTime);
+
+			lightSource.Radius = Config.DecayCurve
+				.Evaluate(1 - (currentTime / Config.DecayTime)) *
+				Config.Radius;
 		}
 		else if (currentTime < 0)
 		{

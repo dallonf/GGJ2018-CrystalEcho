@@ -68,7 +68,7 @@ MonoBehaviour:
   LightmaskPrefab: {fileID: 212908402186995418, guid: 8f1d2a07a0614a048bf9753bc1e06df2,
     type: 2}
   Radius: 0
-  Opacity: 1
+  Opacity: 0.5
 --- !u!212 &212615649916867002
 SpriteRenderer:
   m_ObjectHideFlags: 1

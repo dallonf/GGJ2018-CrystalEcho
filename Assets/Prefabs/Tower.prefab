@@ -104,8 +104,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  MeidanSpeed: 10
-  Variance: 0.2
+  MeidanSpeed: 6
+  Variance: 0.05
 --- !u!114 &114630230306722900
 MonoBehaviour:
   m_ObjectHideFlags: 1

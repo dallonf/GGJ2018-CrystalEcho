@@ -5,4 +5,5 @@ public class LightPopConfig : ScriptableObject
 {
   public float Radius;
   public float DecayTime;
+  public AnimationCurve DecayCurve;
 }
