@@ -5,7 +5,6 @@ using UnityEngine.Events;
 
 public class KnowledgeOwner : MonoBehaviour
 {
-
 	[System.Serializable]
 	public class PongEvent : UnityEvent<KnowableObject> { }
 	public List<KnowableObject> KnownObjects;
@@ -16,10 +15,15 @@ public class KnowledgeOwner : MonoBehaviour
 	{
 		foreach (var obj in objects)
 		{
-			if (!KnownObjects.Contains(obj))
-			{
-				KnownObjects.Add(obj);
-			}
+			GainKnowledge(obj);
+		}
+	}
+
+	public void GainKnowledge(KnowableObject obj)
+	{
+		if (!KnownObjects.Contains(obj))
+		{
+			KnownObjects.Add(obj);
 		}
 	}
 

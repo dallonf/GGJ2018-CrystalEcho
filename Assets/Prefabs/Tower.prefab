@@ -78,6 +78,7 @@ GameObject:
   - component: {fileID: 114661085386281228}
   - component: {fileID: 114798601262090532}
   - component: {fileID: 114178980941957372}
+  - component: {fileID: 114899302371073520}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -707,6 +708,44 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Button3
+--- !u!114 &114899302371073520
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1431830562007980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1871fe2f4627dea4d89744363cc4774a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnShout:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114178980941957372}
+        m_MethodName: Pop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114661085386281228}
+        m_MethodName: LightFingers
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: RespondsToShout+ShoutEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!114 &114936852386510506
 MonoBehaviour:
   m_ObjectHideFlags: 1

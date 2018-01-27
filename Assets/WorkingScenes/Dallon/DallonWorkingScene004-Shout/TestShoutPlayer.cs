@@ -4,13 +4,24 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(KnowledgeOwner))]
+[RequireComponent(typeof(Shouts))]
 public class TestShoutPlayer : MonoBehaviour
 {
 	private KnowledgeOwner knowledgeOwner;
+	private Shouts shouts;
 
 	void Awake()
 	{
 		knowledgeOwner = GetComponent<KnowledgeOwner>();
+		shouts = GetComponent<Shouts>();
+	}
+
+	void Update()
+	{
+		if (Input.GetKeyDown(KeyCode.Space))
+		{
+			shouts.Shout();
+		}
 	}
 
 	void OnGUI()
@@ -28,6 +39,7 @@ public class TestShoutPlayer : MonoBehaviour
 			GUILayout.Label("- nothing");
 		}
 		GUILayout.Space(20);
+		GUILayout.Label("Press space to Shout");
 		GUILayout.EndVertical();
 	}
 }
