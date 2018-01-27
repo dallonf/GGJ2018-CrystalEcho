@@ -68,8 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2d39d1e3c607874388b5853eb98b20d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeToDecay: 3
-  Radius: 5
+  Config: {fileID: 11400000, guid: b5bd4b1192beb684d8ad827af9916474, type: 2}
 --- !u!114 &114351764040473394
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -81,6 +80,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3170d2873bf60546b23a28e0ebd9dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Fingers:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  MeidanSpeed: 10
+  Variance: 0.2
 --- !u!114 &114630230306722900
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -97,6 +122,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 114334594660170072}
         m_MethodName: Pop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114351764040473394}
+        m_MethodName: LightFingers
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

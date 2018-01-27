@@ -53,8 +53,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2d39d1e3c607874388b5853eb98b20d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeToDecay: 3
-  Radius: 2
+  Config: {fileID: 11400000, guid: d8fb237a35e0bc14ab0d24e008f8802b, type: 2}
 --- !u!114 &114769373300568490
 MonoBehaviour:
   m_ObjectHideFlags: 1

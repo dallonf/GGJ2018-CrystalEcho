@@ -6,8 +6,7 @@ using UnityEngine;
 public class LightSourcePopAndDecay : MonoBehaviour
 {
 	private LightSource lightSource;
-	public float TimeToDecay = 3;
-	public float Radius;
+	public LightPopConfig Config;
 
 	private float currentTime = 0;
 
@@ -21,7 +20,7 @@ public class LightSourcePopAndDecay : MonoBehaviour
 		if (currentTime > 0)
 		{
 			currentTime -= Time.deltaTime;
-			lightSource.Radius = Mathf.Lerp(0, Radius, currentTime / TimeToDecay);
+			lightSource.Radius = Mathf.Lerp(0, Config.Radius, currentTime / Config.DecayTime);
 		}
 		else if (currentTime < 0)
 		{
@@ -32,6 +31,6 @@ public class LightSourcePopAndDecay : MonoBehaviour
 
 	public void Pop()
 	{
-		currentTime = TimeToDecay;
+		currentTime = Config.DecayTime;
 	}
 }

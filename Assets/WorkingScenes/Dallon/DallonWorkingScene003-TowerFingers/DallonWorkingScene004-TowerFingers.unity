@@ -447,26 +447,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb3ca933576a12e448bb5c1048e2559f, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &597201267 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1365752284487796, guid: cb3ca933576a12e448bb5c1048e2559f,
-    type: 2}
-  m_PrefabInternal: {fileID: 597201266}
---- !u!114 &597201268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 597201267}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 434a739cdcbb1d14a8e253fd39499062, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LightmaskPrefab: {fileID: 212908402186995418, guid: 8f1d2a07a0614a048bf9753bc1e06df2,
-    type: 2}
-  Radius: 0
-  Opacity: 0
 --- !u!114 &597201271 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114471846224617712, guid: cb3ca933576a12e448bb5c1048e2559f,
@@ -1619,16 +1599,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114351764040473394, guid: 9a52226d397d8a848aca7d28077af75a,
-        type: 2}
-      propertyPath: Fingers.Array.size
-      value: 23
-      objectReference: {fileID: 0}
-    - target: {fileID: 114630230306722900, guid: 9a52226d397d8a848aca7d28077af75a,
-        type: 2}
-      propertyPath: OnPing.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 4087809561137384, guid: 9a52226d397d8a848aca7d28077af75a, type: 2}
       propertyPath: m_LocalPosition.x
       value: -2.27
@@ -1660,11 +1630,6 @@ Prefab:
     - target: {fileID: 4087809561137384, guid: 9a52226d397d8a848aca7d28077af75a, type: 2}
       propertyPath: m_RootOrder
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114351764040473394, guid: 9a52226d397d8a848aca7d28077af75a,
-        type: 2}
-      propertyPath: Variance
-      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 114351764040473394, guid: 9a52226d397d8a848aca7d28077af75a,
         type: 2}
@@ -1781,31 +1746,6 @@ Prefab:
       propertyPath: Fingers.Array.data[22]
       value: 
       objectReference: {fileID: 955835779}
-    - target: {fileID: 114630230306722900, guid: 9a52226d397d8a848aca7d28077af75a,
-        type: 2}
-      propertyPath: OnPing.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114630230306722900, guid: 9a52226d397d8a848aca7d28077af75a,
-        type: 2}
-      propertyPath: OnPing.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114630230306722900, guid: 9a52226d397d8a848aca7d28077af75a,
-        type: 2}
-      propertyPath: OnPing.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 1881157662}
-    - target: {fileID: 114630230306722900, guid: 9a52226d397d8a848aca7d28077af75a,
-        type: 2}
-      propertyPath: OnPing.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: LightFingers
-      objectReference: {fileID: 0}
-    - target: {fileID: 114630230306722900, guid: 9a52226d397d8a848aca7d28077af75a,
-        type: 2}
-      propertyPath: OnPing.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9a52226d397d8a848aca7d28077af75a, type: 2}
   m_IsPrefabParent: 0
@@ -1959,12 +1899,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1715175160}
   m_Script: {fileID: 11500000, guid: c70b84189fb2b994f97752e5c979feec, type: 3}
---- !u!114 &1881157662 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114351764040473394, guid: 9a52226d397d8a848aca7d28077af75a,
-    type: 2}
-  m_PrefabInternal: {fileID: 1715175160}
-  m_Script: {fileID: 11500000, guid: e3170d2873bf60546b23a28e0ebd9dcd, type: 3}
 --- !u!1001 &2043478236
 Prefab:
   m_ObjectHideFlags: 0
