@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TowerController : MonoBehaviour 
 {
-
 	public GameObject menuController;
 
 	// Use this for initialization
@@ -13,26 +13,47 @@ public class TowerController : MonoBehaviour
 		
 	}
 
+    IEnumerator MenuKillTimer()
+    {
+        yield return new WaitForSeconds(4.0f);
+
+        if (menuController.activeInHierarchy)
+            menuController.SetActive(false);
+    }
+
 	public void TowerClicked ()
 	{
 		if (menuController.activeInHierarchy)
-			menuController.SetActive (false);
+        {
+            menuController.SetActive(false);
+            StopCoroutine(MenuKillTimer());
+        }
+
 		else
-			menuController.SetActive (true);
+        {
+            menuController.SetActive(true);
+            StartCoroutine(MenuKillTimer());
+        }
 	}
 	
 	public void Button1Pressed()
 	{
-		//TODO -- stuff when this button is pressed
-	}
+        StopCoroutine(MenuKillTimer());
+        menuController.SetActive(false);
+        //TODO -- stuff when this button is pressed
+    }
 
 	public void Button2Pressed()
 	{
-		//TODO -- stuff when this button is pressed
-	}
+        StopCoroutine(MenuKillTimer());
+        menuController.SetActive(false);
+        //TODO -- stuff when this button is pressed
+    }
 
 	public void Button3Pressed()
 	{
-		//TODO -- stuff when this button is pressed
-	}
+        StopCoroutine(MenuKillTimer());
+        menuController.SetActive(false);
+        //TODO -- stuff when this button is pressed
+    }
 }
