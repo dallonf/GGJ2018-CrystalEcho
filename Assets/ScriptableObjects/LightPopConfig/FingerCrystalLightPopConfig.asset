@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffb73abc02b1fa94487d928e6e6e630f, type: 3}
   m_Name: FingerCrystalLightPopConfig
   m_EditorClassIdentifier: 
-  Radius: 1.5
+  Radius: 34.39
   DecayTime: 7
   DecayCurve:
     serializedVersion: 2
