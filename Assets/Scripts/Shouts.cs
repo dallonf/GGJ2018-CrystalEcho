@@ -1,5 +1,6 @@
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
 public class Shouts : MonoBehaviour
@@ -8,6 +9,7 @@ public class Shouts : MonoBehaviour
   public GameObject ShoutEffect;
   public float Range = 10;
   public float ShoutEffectNaturalRadius = 10;
+  public UnityEvent OnShout;
 
   public void Shout()
   {
@@ -27,5 +29,7 @@ public class Shouts : MonoBehaviour
         (x, y) => x.ReceiveShout(knowledgeOwner)
       );
     }
+
+    OnShout.Invoke();
   }
 }
