@@ -303,6 +303,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1965704400498298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4809707549528008}
+  - component: {fileID: 114710221712874924}
+  m_Layer: 0
+  m_Name: HintLightSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1997258353345352
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,11 +341,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1635867625498356}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 236.6, y: 114.267334, z: 222}
-  m_LocalScale: {x: 7.6150365, y: 7.6150346, z: 7.6150346}
+  m_LocalPosition: {x: 343.1, y: -0.8, z: 220}
+  m_LocalScale: {x: 7.615036, y: 7.615036, z: 7.615036}
   m_Children:
   - {fileID: 224903684768764872}
   - {fileID: 4481649435834560}
+  - {fileID: 4809707549528008}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -403,6 +420,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4481649435834560}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4809707549528008
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1965704400498298}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4095186140709366}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4824601223380842
 Transform:
@@ -565,7 +595,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3170d2873bf60546b23a28e0ebd9dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Fingers: []
+  Fingers:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   MeidanSpeed: 150
   Variance: 0.05
 --- !u!114 &114267931011832564
@@ -841,6 +877,21 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: Pingable+PingEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &114710221712874924
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1965704400498298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 434a739cdcbb1d14a8e253fd39499062, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LightmaskPrefab: {fileID: 212908402186995418, guid: 8f1d2a07a0614a048bf9753bc1e06df2,
+    type: 2}
+  Radius: 53.61
+  Opacity: 0.1
 --- !u!114 &114715372238489590
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1052,6 +1103,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 114068249409929760}
         m_MethodName: LightFingers
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: Trigger
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
