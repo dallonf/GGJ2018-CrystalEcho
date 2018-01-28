@@ -28,6 +28,10 @@ public class MessageUI : MonoBehaviour
         newTransform.SetParent(ContentGroup, false);
         newText.text = newMessage.Content;
         newText.color = newMessage.Color;
+        yield return null;
+        // Scroll to bottom
+        ScrollRect.StopMovement();
+        ScrollRect.verticalNormalizedPosition = 0;
         messagesShown += 1;
       }
       yield return null;
