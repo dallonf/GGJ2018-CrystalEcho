@@ -259,12 +259,12 @@ GameObject:
   - component: {fileID: 643269083}
   - component: {fileID: 643269082}
   m_Layer: 5
-  m_Name: Image
+  m_Name: FadeToWhiteOverlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &643269081
 RectTransform:
   m_ObjectHideFlags: 0
@@ -290,7 +290,7 @@ CanvasGroup:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 643269080}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
@@ -339,6 +339,7 @@ GameObject:
   - component: {fileID: 973642186}
   - component: {fileID: 973642187}
   - component: {fileID: 973642188}
+  - component: {fileID: 973642189}
   m_Layer: 0
   m_Name: EndGameArea
   m_TagString: Untagged
@@ -442,9 +443,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55cc11154a84b704da12405b7aa11f64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FinishRadius: 1
-  StartRadius: 40
+  FinishRadius: 7
+  StartRadius: 20
   FadeToWhite: {fileID: 643269082}
+  OnEndGame:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 973642189}
+        m_MethodName: Go
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: VictoryScreen
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &973642189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 973642183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f1ebe6eaff821c45a34a131dd10a2e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1150154482
 Prefab:
   m_ObjectHideFlags: 0

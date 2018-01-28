@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Collider))]
 public class EndGameArea : MonoBehaviour
@@ -11,6 +12,8 @@ public class EndGameArea : MonoBehaviour
 	public CanvasGroup FadeToWhite;
 	private GameObject trackingPlayer;
 
+	public UnityEvent OnEndGame;
+
 	// Update is called once per frame
 	void Update()
 	{
@@ -19,6 +22,10 @@ public class EndGameArea : MonoBehaviour
 			var distance = Vector3.Distance(trackingPlayer.transform.position, transform.position);
 			float percent = Mathf.InverseLerp(StartRadius, FinishRadius, distance);
 			FadeToWhite.alpha = percent;
+
+			if (percent >= 1 - Mathf.Epsilon) {
+				OnEndGame.Invoke();
+			}
 		}
 	}
 
