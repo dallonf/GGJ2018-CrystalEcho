@@ -45,6 +45,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Tall Objects
+    uniqueID: 3437766521
+    locked: 0
   - name: World UI
     uniqueID: 1858031599
     locked: 0
