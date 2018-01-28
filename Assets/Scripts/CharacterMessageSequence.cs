@@ -12,7 +12,7 @@ public class CharacterMessageSequence : MessageSequence
     return Paragraphs.Select(p => new MessageSystem.Message()
     {
       Color = Character.Color,
-        Content = Character.Name + ": " + p
+        Content = Character.name + ": " + p
     });
   }
 }

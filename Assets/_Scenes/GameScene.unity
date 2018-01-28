@@ -19219,6 +19219,11 @@ Prefab:
       propertyPath: Fingers.Array.size
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 114873496748435082, guid: 4b9e89c3917966740905eb559286c054,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4095186140709366, guid: 4b9e89c3917966740905eb559286c054, type: 2}
       propertyPath: m_LocalPosition.x
       value: 227
@@ -19290,6 +19295,37 @@ Prefab:
       propertyPath: Fingers.Array.data[6]
       value: 
       objectReference: {fileID: 1477192905}
+    - target: {fileID: 114873496748435082, guid: 4b9e89c3917966740905eb559286c054,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114873496748435082, guid: 4b9e89c3917966740905eb559286c054,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114873496748435082, guid: 4b9e89c3917966740905eb559286c054,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 779375234}
+    - target: {fileID: 114873496748435082, guid: 4b9e89c3917966740905eb559286c054,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: AddMessageFromResource
+      objectReference: {fileID: 0}
+    - target: {fileID: 114873496748435082, guid: 4b9e89c3917966740905eb559286c054,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: MessageSequence, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114873496748435082, guid: 4b9e89c3917966740905eb559286c054,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: e33dfa54549dd9d41b880312b7b44ec4,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b9e89c3917966740905eb559286c054, type: 2}
   m_IsPrefabParent: 0

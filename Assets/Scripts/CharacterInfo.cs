@@ -4,5 +4,4 @@ using UnityEngine;
 public class CharacterInfo : ScriptableObject
 {
   public Color Color;
-  public string Name;
 }
