@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(KnowableObject))]
@@ -67,7 +68,8 @@ public class TowerController : MonoBehaviour
 	{
         StopCoroutine(MenuKillTimer());
         menuController.SetActive(false);
-        //TODO -- stuff when this button is pressed
+        // Ping
+        ExecuteEvents.Execute<IPingable>(knowableObject.gameObject, null, (x, y) => x.Ping(KnowledgeOwner));
     }
 
 	public void Button2Pressed()
