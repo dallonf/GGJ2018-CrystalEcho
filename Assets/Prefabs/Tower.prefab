@@ -297,7 +297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Fingers: []
-  MeidanSpeed: 6
+  MeidanSpeed: 150
   Variance: 0.05
 --- !u!114 &114267931011832564
 MonoBehaviour:
