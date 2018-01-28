@@ -9,8 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36a1018f495c35b479a28e5d3e12760e, type: 3}
-  m_Name: 00110_tutorial_ping
+  m_Name: 00210_tutorial_ping
   m_EditorClassIdentifier: 
   Paragraphs:
-  - Click a tower's name in the sidebar to Ping them from anywhere in the cavern.
-  - This will light them up.
+  - Ping a tower to locate it.
