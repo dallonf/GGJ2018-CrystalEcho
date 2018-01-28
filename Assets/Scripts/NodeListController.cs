@@ -3,20 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NodeListController : MonoBehaviour {
+public class NodeListController : MonoBehaviour
+{
+	public KnowledgeOwner KnowledgeOwner;
+	public NodeListElement ElementPrefab;
+	public RectTransform ElementList;
 
-	public Button buttonPefab;
-	public RectTransform nodeList;
+	private Dictionary<KnowableObject, NodeListElement> elementMap = new Dictionary<KnowableObject, NodeListElement>();
 
-	// Use this for initialization
-	void Start () {
-		
+	void Update()
+	{
+		foreach (var knownObj in KnowledgeOwner.KnownObjects)
+		{
+			if (!elementMap.ContainsKey(knownObj))
+			{
+				AddNodeToList(knownObj);
+			}
+		}
 	}
 
-	public void AddNodeToList(GameObject node)
+	public void AddNodeToList(KnowableObject node)
 	{
-		Button newListButton = GameObject.Instantiate (buttonPefab);
-
+		NodeListElement newListElement = GameObject.Instantiate(ElementPrefab);
+		newListElement.GetComponent<RectTransform>().SetParent(ElementList, false);
+		newListElement.KnowledgeOwner = KnowledgeOwner;
+		newListElement.InitObject(node);
+		elementMap.Add(node, newListElement);
 	}
 
 }
