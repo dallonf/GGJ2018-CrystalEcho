@@ -10,6 +10,8 @@ public class ConversationMessageSequence : MessageSequence
   {
     public CharacterInfo Character;
     public string Message;
+    public bool ShouldOverrideColor;
+    public Color OverrideColor;
   }
 
   public ConversationMessage[] Messages;
@@ -18,7 +20,7 @@ public class ConversationMessageSequence : MessageSequence
   {
     return Messages.Select(m => new MessageSystem.Message()
     {
-      Color = m.Character.Color,
+      Color = m.ShouldOverrideColor ? m.OverrideColor : m.Character.Color,
         Content = System.String.Format("<{0}> {1}", m.Character.name, m.Message)
     });
   }
