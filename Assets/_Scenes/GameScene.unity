@@ -922,7 +922,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &95534721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4703,6 +4703,23 @@ Transform:
   m_PrefabParentObject: {fileID: 4585543078945244, guid: f69481e79e5786e4cbda6382c74d7934,
     type: 2}
   m_PrefabInternal: {fileID: 1307079325}
+--- !u!1 &521736953 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1764007857404312, guid: df73fbcbe5d5a9e4abf4f465f5edb36a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1445512195}
+--- !u!114 &521736961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 521736953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListenerNumber: 0
 --- !u!1001 &534217961
 Prefab:
   m_ObjectHideFlags: 0
@@ -6224,7 +6241,7 @@ Prefab:
     - target: {fileID: 224948532430133728, guid: 2ec34b565098b29488dba5450eebbd51,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -0.00005450095
+      value: -0.000014067275
       objectReference: {fileID: 0}
     - target: {fileID: 224491519035279052, guid: 2ec34b565098b29488dba5450eebbd51,
         type: 2}
@@ -8890,6 +8907,17 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1015746051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1015746040}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7a6c3b8d6d1af43acfffbcc5f64cd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1018570961
 Prefab:
   m_ObjectHideFlags: 0
