@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df6e6d6c2503bad46ae0be503c449903, type: 3}
+  m_Name: PrologueText2
+  m_EditorClassIdentifier: 
+  proText: "You shout out to the voice, and a nearby light nearly blinds you. You
+    first notice your reflection gleaming off of a large crystal right in front of
+    you. Treads, copper dome, everything seems to be there and intact, but the light
+    fades too fast for you to be sure. A dim glow remains at the source of the light,
+    high above, pulsating as it speaks to you. \u201COh thank the makers there\u2019s
+    someone here. Help me! Please!\u201D"
+  myColor: {r: 0, g: 1, b: 0, a: 1}
