@@ -2,18 +2,12 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-[RequireComponent(typeof(KnowledgeOwner))]
 public class Shouts : MonoBehaviour
 {
-  private KnowledgeOwner knowledgeOwner;
+  public KnowledgeOwner knowledgeOwner;
   public GameObject ShoutEffect;
   public float Range = 10;
   public float ShoutEffectNaturalRadius = 10;
-
-  void Awake()
-  {
-    knowledgeOwner = GetComponent<KnowledgeOwner>();
-  }
 
   public void Shout()
   {
