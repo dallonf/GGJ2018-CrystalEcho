@@ -39,8 +39,14 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Objects on Ground
+    uniqueID: 2843640727
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Tall Objects
+    uniqueID: 3437766521
     locked: 0
   - name: World UI
     uniqueID: 1858031599

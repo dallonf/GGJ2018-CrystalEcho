@@ -12,8 +12,13 @@ public class MessageSystem : MonoBehaviour
 
   public List<Message> Messages;
 
-  public void AddMessage(Message newMessage) 
+  public void AddMessage(Message newMessage)
   {
     Messages.Add(newMessage);
+  }
+
+  public void AddMessageFromResource(MessageSequence messageSequence)
+  {
+    Messages.AddRange(messageSequence.GetMessages());
   }
 }
