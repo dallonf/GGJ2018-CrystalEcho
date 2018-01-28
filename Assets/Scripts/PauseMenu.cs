@@ -8,6 +8,15 @@ public class PauseMenu : MonoBehaviour {
 	float localTime;
 	public GameObject pauseScreen;
 
+	void Update ()
+	{
+		if (Input.GetKeyDown (KeyCode.P) || Input.GetKeyDown (KeyCode.Escape))
+		if (Time.timeScale != 0)
+			PauseButton ();
+		else
+			ResumeButton ();
+	}
+
 	public void PauseButton()
 	{
 		localTime = Time.timeScale;

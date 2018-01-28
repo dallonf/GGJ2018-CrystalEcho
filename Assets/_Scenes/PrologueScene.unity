@@ -649,6 +649,7 @@ MonoBehaviour:
   skipbutton: {fileID: 760048636}
   textFabList:
   - {fileID: 11400000, guid: e07d715b05542b24383d44ad0d4cf2e2, type: 2}
+  - {fileID: 11400000, guid: 9f13769f7f5795e4fb8bf4e1dbc165cc, type: 2}
   ScrollRect: {fileID: 1568302459}
   ContentGroup: {fileID: 1796276591}
   CharTime: 0.1
