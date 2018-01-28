@@ -18,7 +18,7 @@ public class MainMenuController : MonoBehaviour {
 
 	public void StartButton()
 	{
-		SceneManager.LoadScene("GameScene");
+		SceneManager.LoadScene("PrologueScene");
 	}
 
 	public void ControlsButton()
