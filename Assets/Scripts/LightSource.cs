@@ -23,7 +23,7 @@ public class LightSource : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		lightmask.transform.localScale = Vector3.one * Radius;
-		lightmask.color = new Color(1, 1, 1, Opacity);
+		lightmask.transform.localScale = Vector3.one * Mathf.Lerp(lightmask.transform.localScale.x, Radius, 0.6f);
+		lightmask.color = new Color(1, 1, 1, Mathf.Lerp(lightmask.color.a, Opacity, 0.6f));
 	}
 }
