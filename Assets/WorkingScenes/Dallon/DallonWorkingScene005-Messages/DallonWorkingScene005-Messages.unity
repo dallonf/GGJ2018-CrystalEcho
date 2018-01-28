@@ -450,7 +450,7 @@ MonoBehaviour:
   - Nam nec ex viverra, tempus mauris eget, lacinia neque.
   - Cras dignissim massa ut odio placerat, quis ultrices felis vehicula.
   - Integer imperdiet ac est sed fringilla.
-  Delay: 1
+  Delay: 3
 --- !u!4 &1314677849
 Transform:
   m_ObjectHideFlags: 0
@@ -580,6 +580,21 @@ Prefab:
         type: 2}
       propertyPath: m_SizeDelta.y
       value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 224125285959624134, guid: 2ec34b565098b29488dba5450eebbd51,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224125285959624134, guid: 2ec34b565098b29488dba5450eebbd51,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224125285959624134, guid: 2ec34b565098b29488dba5450eebbd51,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: -17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ec34b565098b29488dba5450eebbd51, type: 2}

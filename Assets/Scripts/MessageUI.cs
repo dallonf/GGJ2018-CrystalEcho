@@ -8,6 +8,7 @@ public class MessageUI : MonoBehaviour
   public GameObject TextPrefab;
   public ScrollRect ScrollRect;
   public RectTransform ContentGroup;
+  public float CharTime = 0.1f;
 
   private int messagesShown = 0;
 
@@ -26,12 +27,16 @@ public class MessageUI : MonoBehaviour
         var newText = GameObject.Instantiate(TextPrefab).GetComponent<Text>();
         var newTransform = newText.GetComponent<RectTransform>();
         newTransform.SetParent(ContentGroup, false);
-        newText.text = newMessage.Content;
         newText.color = newMessage.Color;
-        yield return null;
-        // Scroll to bottom
-        ScrollRect.StopMovement();
-        ScrollRect.verticalNormalizedPosition = 0;
+
+        for (int i = 1; i < newMessage.Content.Length + 1; i++)
+        {
+          newText.text = newMessage.Content.Substring(0, i);
+          yield return null;
+          // Scroll to bottom
+          ScrollRect.StopMovement();
+          ScrollRect.verticalNormalizedPosition = 0;
+        }
         messagesShown += 1;
       }
       yield return null;
