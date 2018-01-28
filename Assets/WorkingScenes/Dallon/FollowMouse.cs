@@ -3,11 +3,25 @@ using UnityEngine;
 public class FollowMouse : MonoBehaviour
 {
   public new Camera camera;
+  public float z;
   void Update()
   {
-    // Move to mouse position
-    var targetPosition = camera.ScreenToWorldPoint(Input.mousePosition);
-    targetPosition.z = 0;
-    transform.position = targetPosition;
+    if (camera.orthographic)
+    {
+      var targetPosition = camera.ScreenToWorldPoint(Input.mousePosition);
+      targetPosition.z = z;
+      transform.position = targetPosition;
+    }
+    else
+    {
+      var ray = camera.ScreenPointToRay(Input.mousePosition);
+      var plane = new Plane(Vector3.forward, new Vector3(0, 0, z));
+      float distance;
+      if (plane.Raycast(ray, out distance))
+      {
+        var targetPosition = ray.GetPoint(distance);
+        transform.position = targetPosition;
+      }
+    }
   }
 }

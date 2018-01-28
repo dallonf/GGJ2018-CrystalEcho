@@ -48,6 +48,6 @@ public class PlayerMover : MonoBehaviour {
 			movement.x
 		) * Mathf.Rad2Deg - 90;
 
-		transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.AngleAxis(angle, Vector3.down), speed / 20);
+		transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.AngleAxis(angle, Vector3.forward), speed / 20);
 	}
 }
