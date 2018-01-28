@@ -19,7 +19,11 @@ public class EndGameArea : MonoBehaviour
 	{
 		if (trackingPlayer)
 		{
-			var distance = Vector3.Distance(trackingPlayer.transform.position, transform.position);
+			var flatPlayerPosition = trackingPlayer.transform.position;
+			flatPlayerPosition.z = 0;
+			var flatPosition = transform.position;
+			flatPosition.z = 0;
+			var distance = Vector3.Distance(flatPlayerPosition, flatPosition);
 			float percent = Mathf.InverseLerp(StartRadius, FinishRadius, distance);
 			FadeToWhite.alpha = percent;
 
