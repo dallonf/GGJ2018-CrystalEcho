@@ -24,6 +24,8 @@ GameObject:
   - component: {fileID: 23009910690720132}
   - component: {fileID: 114528267367803946}
   - component: {fileID: 54052864778568444}
+  - component: {fileID: 114357493571203816}
+  - component: {fileID: 114899406275383954}
   m_Layer: 0
   m_Name: PlayerCube
   m_TagString: Untagged
@@ -142,6 +144,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114357493571203816
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1085827060625948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5fb4ba3d0974e24694b6d06b97510cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knowledgeOwner: {fileID: 0}
+  ShoutEffect: {fileID: 1552745064228958, guid: 3142525c46036c64ea7e280319f0275e,
+    type: 2}
+  Range: 25
+  ShoutEffectNaturalRadius: 10
 --- !u!114 &114528267367803946
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -154,6 +172,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
+--- !u!114 &114899406275383954
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1085827060625948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eaa620820143b44e913592acc7936f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212278709401568978
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -168,7 +197,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4286ced52eaf7d44e9e500a31646ac8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
