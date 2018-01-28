@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Name: 00110_tutorial_ping
   m_EditorClassIdentifier: 
   Paragraphs:
-  - Click a tower's name in the sidebar to ping them.
-  - This will cause them to light up and show you where they are.
+  - Click a tower's name in the sidebar to Ping them from anywhere in the cavern.
+  - This will light them up.

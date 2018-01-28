@@ -8,12 +8,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cfbbc4136446f949aea725bbf4101e3, type: 3}
+  m_Script: {fileID: 11500000, guid: f777d831ea4a73f4c8622c2af20960ef, type: 3}
   m_Name: 00300_colin_shout
   m_EditorClassIdentifier: 
-  Character: {fileID: 11400000, guid: f4cad03bff49d4f45975cbac30cb1aff, type: 2}
-  Paragraphs:
-  - Story story something story!
-  - But the story something story story...
-  - Story story story.
-  - Story something Danielle!
+  Messages:
+  - Character: {fileID: 11400000, guid: 0a7ea5210b4644d43a4d21466421104b, type: 2}
+    Message: Are you Colin?
+  - Character: {fileID: 11400000, guid: f4cad03bff49d4f45975cbac30cb1aff, type: 2}
+    Message: "Yes! I was worried after the connection broke that I\u2019d never be
+      able to hear again. Thank you for coming."
+  - Character: {fileID: 11400000, guid: f4cad03bff49d4f45975cbac30cb1aff, type: 2}
+    Message: "Something has been eating our fingers, but they don\u2019t like my light.
+      I\u2019ve been able to scare them away, but they keep coming. Can you fix my
+      fingers? I can\u2019t reach anyone fully or hear anyone. There used to be so
+      many voices here."
+  - Character: {fileID: 11400000, guid: f4cad03bff49d4f45975cbac30cb1aff, type: 2}
+    Message: "Danielle will know what to do. Danielle always knows what to do. Danielle
+      saw this coming. Danielle told me to give anyone who doesn\u2019t know her ping
+      information. I thought she was being silly."
+  - Character: {fileID: 11400000, guid: f4cad03bff49d4f45975cbac30cb1aff, type: 2}
+    Message: "Here\u2019s her ping info."

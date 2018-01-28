@@ -8,7 +8,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b78878d0f4216a48829b196dae2939f, type: 3}
-  m_Name: Danielle
+  m_Script: {fileID: 11500000, guid: 36a1018f495c35b479a28e5d3e12760e, type: 3}
+  m_Name: 00210_tutorial_ping
   m_EditorClassIdentifier: 
-  Color: {r: 0, g: 1, b: 0.50344825, a: 1}
+  Paragraphs:
+  - Ping a tower to locate it.
