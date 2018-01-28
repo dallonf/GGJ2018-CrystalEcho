@@ -32,7 +32,7 @@ MonoBehaviour:
   - {fileID: 114609324688922210}
   MasterBankRef: {fileID: 114315144289512268}
   StringsBankRef: {fileID: 114496240977291330}
-  stringsBankWriteTime: 636527489376508194
+  stringsBankWriteTime: 636527503720104418
   cacheVersion: 2
 --- !u!114 &114007094056501648
 MonoBehaviour:
@@ -249,7 +249,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114260938968726790}
+  - {fileID: 114565166518759418}
   MinDistance: 0
   MaxDistance: 0
   Length: 7000
@@ -317,6 +317,21 @@ MonoBehaviour:
   - Name: Desktop
     Value: 3857664
   Exists: 1
+--- !u!114 &114112625835167422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: menu
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114119727599216388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -490,7 +505,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114702753822825540}
+  - {fileID: 114427072031951522}
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
@@ -753,9 +768,9 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114793984820470236}
-  - {fileID: 114137635560620970}
-  - {fileID: 114510976498457902}
+  - {fileID: 114821136862226998}
+  - {fileID: 114618258616432828}
+  - {fileID: 114918100041249684}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -787,7 +802,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\Madgod483\Documents\GitHub\GGJ2018-CrystalEcho\CrystalEcho\crystal
     echo fmod\Build\Desktop\Master Bank.bank
-  lastModified: 636527489376458173
+  lastModified: 636527503720084285
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -985,6 +1000,21 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114384985916685408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: speed
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114387526820674954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1068,7 +1098,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114180917078672052}
+  - {fileID: 114112625835167422}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -1094,6 +1124,21 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8000
+--- !u!114 &114427072031951522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: menu
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114437030739505822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1244,7 +1289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: CrystalEcho\crystal echo fmod\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636527489376508194
+  lastModified: 636527503720104418
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -1426,6 +1471,21 @@ MonoBehaviour:
   - Name: Desktop
     Value: 3858752
   Exists: 1
+--- !u!114 &114565166518759418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: near
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114583473435439112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1643,10 +1703,25 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114019617920474488}
+  - {fileID: 114751220097966474}
   MinDistance: 0
   MaxDistance: 0
   Length: 3500
+--- !u!114 &114618258616432828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: near
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114619740378669148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1674,6 +1749,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: speed
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114672685795316754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: menu
   Min: 0
   Max: 1
   Default: 0
@@ -1769,6 +1859,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 216
+--- !u!114 &114751220097966474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: near
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114753510914153360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1988,6 +2093,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 216
+--- !u!114 &114821136862226998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: menu
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114827905410644022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2007,7 +2127,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114209764070072410}
+  - {fileID: 114672685795316754}
   MinDistance: 0
   MaxDistance: 0
   Length: 500
@@ -2186,7 +2306,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114025910332995242}
+  - {fileID: 114384985916685408}
   MinDistance: 0
   MaxDistance: 0
   Length: 5000
@@ -2292,6 +2412,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 11814
+--- !u!114 &114918100041249684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: health
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114918635547208238
 MonoBehaviour:
   m_ObjectHideFlags: 0
