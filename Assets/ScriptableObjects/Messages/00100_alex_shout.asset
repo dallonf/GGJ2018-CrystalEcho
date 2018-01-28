@@ -8,12 +8,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cfbbc4136446f949aea725bbf4101e3, type: 3}
+  m_Script: {fileID: 11500000, guid: f777d831ea4a73f4c8622c2af20960ef, type: 3}
   m_Name: 00100_alex_shout
   m_EditorClassIdentifier: 
-  Character: {fileID: 11400000, guid: befc8efbebf1ccf42ad5497885fa94bc, type: 2}
-  Paragraphs:
-  - Who are you?
-  - Who am I?
-  - Follow my crystals to the southeast...
-  - Someone else may have the answers...
+  Messages:
+  - Character: {fileID: 11400000, guid: 0a7ea5210b4644d43a4d21466421104b, type: 2}
+    Message: Where am I?
+  - Character: {fileID: 11400000, guid: befc8efbebf1ccf42ad5497885fa94bc, type: 2}
+    Message: "I don\u2019t understand. You\u2019re with me. There has always been
+      here, and there\u2019s always been my friends. Now my friends are gone. I don\u2019t
+      understand. I used to be able to touch them. Where are they?"
+  - Character: {fileID: 11400000, guid: 0a7ea5210b4644d43a4d21466421104b, type: 2}
+    Message: "I don\u2019t know where they are. How did you touch them?"
+  - Character: {fileID: 11400000, guid: befc8efbebf1ccf42ad5497885fa94bc, type: 2}
+    Message: "I used to be able to touch them with my fingers. Let me show you. They
+      used to let me touch further down this way. Come back for me? I don\u2019t want
+      to be alone anymore."

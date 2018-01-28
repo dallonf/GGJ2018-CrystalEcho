@@ -2343,7 +2343,7 @@ MonoBehaviour:
         m_MethodName: AddMessageFromResource
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: e33dfa54549dd9d41b880312b7b44ec4,
+          m_ObjectArgument: {fileID: 11400000, guid: ae2b8f7df2bc4314fb9021ec7d35bf6c,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: MessageSequence, Assembly-CSharp
           m_IntArgument: 0
@@ -6535,7 +6535,7 @@ Prefab:
     - target: {fileID: 224948532430133728, guid: 2ec34b565098b29488dba5450eebbd51,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 114727387010430494, guid: 2ec34b565098b29488dba5450eebbd51,
         type: 2}
@@ -16406,7 +16406,7 @@ Prefab:
     - target: {fileID: 224581600112213596, guid: 0988314869dcdeb41a595ff851ed2af4,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 224404723906406060, guid: 0988314869dcdeb41a595ff851ed2af4,
         type: 2}

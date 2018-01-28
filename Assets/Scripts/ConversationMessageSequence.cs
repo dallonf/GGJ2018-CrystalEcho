@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "ConversationMessageSequence", menuName = "GGJ2018-CrystalEcho/ConversationMessageSequence", order = 0)]
 public class ConversationMessageSequence : MessageSequence
 {
+  [System.Serializable]
   public struct ConversationMessage
   {
     public CharacterInfo Character;
