@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4693646705013334}
   - component: {fileID: 212922165889845702}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: arrow-glow-solid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4717159537859978}
   - component: {fileID: 212624547644294326}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: arrow-glow-soft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51,7 +51,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4534162029588440}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ArrowEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,7 +67,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4344937982490034}
   - component: {fileID: 114094006361430754}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PongArrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +83,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4716721932675302}
   - component: {fileID: 95195651009718368}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Offset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1454015395991058}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.8021555, y: -0.17886755, z: -0.080940865}
+  m_LocalPosition: {x: 254.3828, y: 124.642914, z: -0.080940865}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4716721932675302}
@@ -139,8 +139,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1458716386924690}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 4, z: 0}
+  m_LocalScale: {x: 5.2561946, y: 5.256192, z: 5.256192}
   m_Children:
   - {fileID: 4534162029588440}
   m_Father: {fileID: 4344937982490034}
