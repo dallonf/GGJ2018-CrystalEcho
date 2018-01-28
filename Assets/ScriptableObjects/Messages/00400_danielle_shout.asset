@@ -8,10 +8,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cfbbc4136446f949aea725bbf4101e3, type: 3}
+  m_Script: {fileID: 11500000, guid: f777d831ea4a73f4c8622c2af20960ef, type: 3}
   m_Name: 00400_danielle_shout
   m_EditorClassIdentifier: 
-  Character: {fileID: 11400000, guid: e19c0163234dbaf4f8da5b219a492162, type: 2}
-  Paragraphs:
-  - The exit is in the northwest.
-  - Also story something.
+  Messages:
+  - Character: {fileID: 11400000, guid: 0a7ea5210b4644d43a4d21466421104b, type: 2}
+    Message: Danielle?
+  - Character: {fileID: 11400000, guid: e19c0163234dbaf4f8da5b219a492162, type: 2}
+    Message: "Oh! Finally some help from the surface. Yes I\u2019m Danielle. I fear
+      you\u2019re too late though. I can see you. You have no hands. You cannot help
+      us."
+  - Character: {fileID: 11400000, guid: e19c0163234dbaf4f8da5b219a492162, type: 2}
+    Message: I know how to get out of here. Please, help us. Go and get the makers.
+      They can fix us. They can save us. Let me show you the way out.

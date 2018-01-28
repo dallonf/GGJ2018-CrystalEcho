@@ -8,12 +8,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cfbbc4136446f949aea725bbf4101e3, type: 3}
+  m_Script: {fileID: 11500000, guid: f777d831ea4a73f4c8622c2af20960ef, type: 3}
   m_Name: 00200_bonnie_shout
   m_EditorClassIdentifier: 
-  Character: {fileID: 11400000, guid: 9ed6f5f8c0f42494c8e02515b2932eeb, type: 2}
-  Paragraphs:
-  - Oh hello there!
-  - You must be new.
-  - Something something story something.
-  - You should meet my friend, Colin.
+  Messages:
+  - Character: {fileID: 11400000, guid: 0a7ea5210b4644d43a4d21466421104b, type: 2}
+    Message: Hello. Are you a friend of that tower thing?
+  - Character: {fileID: 11400000, guid: 9ed6f5f8c0f42494c8e02515b2932eeb, type: 2}
+    Message: "Hi there! I\u2019m Bonnie. Come to think of it I haven\u2019t heard
+      from Alex in a while. Alex was always such a worry-wart."
+  - Character: {fileID: 11400000, guid: 9ed6f5f8c0f42494c8e02515b2932eeb, type: 2}
+    Message: "Now that you mention it, I haven\u2019t heard from anyone recently.
+      Something\u2019s wrong with my fingers. I usually like the quiet, but I can\u2019t
+      feel some of my fingers. What\u2019s going on?"
+  - Character: {fileID: 11400000, guid: 9ed6f5f8c0f42494c8e02515b2932eeb, type: 2}
+    Message: Colin?
+  - Character: {fileID: 11400000, guid: 9ed6f5f8c0f42494c8e02515b2932eeb, type: 2}
+    Message: Colin are you there?
+  - Character: {fileID: 11400000, guid: 9ed6f5f8c0f42494c8e02515b2932eeb, type: 2}
+    Message: "Where\u2019s Colin?! I used to be able to reach him. I know he\u2019s
+      there but I can\u2019t hear anyone. I don\u2019t have eyes or legs. Will you
+      go to him?"
+  - Character: {fileID: 11400000, guid: 9ed6f5f8c0f42494c8e02515b2932eeb, type: 2}
+    Message: "I can\u2019t move, but let me send you where he should be. I know he\u2019s
+      there. I\u2019ll get him to let you find him."
+  - Character: {fileID: 11400000, guid: 9ed6f5f8c0f42494c8e02515b2932eeb, type: 2}
+    Message: "I can can\u2019t hear you Colin. I hope you can hear me. There\u2019s
+      someone here who can see! I\u2019m sending them to you! Show them your light
+      when they ask!"
