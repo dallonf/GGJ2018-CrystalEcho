@@ -11,12 +11,6 @@ public class PlayerShouts : MonoBehaviour, IPointerClickHandler
   {
     shouts = GetComponent<Shouts>();
   }
-  void Update()
-  {
-    if (Input.GetKeyDown(KeyCode.Space)) {
-      shouts.Shout();
-    }
-  }
 
   public void OnPointerClick(PointerEventData eventData)
   {
