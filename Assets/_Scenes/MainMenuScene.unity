@@ -239,6 +239,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1983691006}
     m_Modifications:
+    - target: {fileID: 114962643277275760, guid: 8a85fcb2ff2775d429781a9e2886c3ca,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 224602590738997580, guid: 8a85fcb2ff2775d429781a9e2886c3ca,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -347,6 +352,31 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: StartButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962643277275760, guid: 8a85fcb2ff2775d429781a9e2886c3ca,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962643277275760, guid: 8a85fcb2ff2775d429781a9e2886c3ca,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962643277275760, guid: 8a85fcb2ff2775d429781a9e2886c3ca,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1666194904}
+    - target: {fileID: 114962643277275760, guid: 8a85fcb2ff2775d429781a9e2886c3ca,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: Stop
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962643277275760, guid: 8a85fcb2ff2775d429781a9e2886c3ca,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8a85fcb2ff2775d429781a9e2886c3ca, type: 2}
@@ -1407,6 +1437,39 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 5
+--- !u!1 &1666194902 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1041712637826006, guid: 8a85fcb2ff2775d429781a9e2886c3ca,
+    type: 2}
+  m_PrefabInternal: {fileID: 72841644}
+--- !u!114 &1666194903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1666194902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/MenuMusic
+  PlayEvent: 1
+  StopEvent: 12
+  CollisionTag: 
+  AllowFadeout: 0
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &1666194904 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114406439056793412, guid: 8a85fcb2ff2775d429781a9e2886c3ca,
+    type: 2}
+  m_PrefabInternal: {fileID: 72841644}
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
 --- !u!224 &1845872150 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224602590738997580, guid: 8a85fcb2ff2775d429781a9e2886c3ca,

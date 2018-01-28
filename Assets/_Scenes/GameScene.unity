@@ -12309,6 +12309,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114357493571203816, guid: f69481e79e5786e4cbda6382c74d7934,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4585543078945244, guid: f69481e79e5786e4cbda6382c74d7934, type: 2}
       propertyPath: m_LocalPosition.x
       value: 248.802
@@ -12346,6 +12351,31 @@ Prefab:
       propertyPath: knowledgeOwner
       value: 
       objectReference: {fileID: 634311694}
+    - target: {fileID: 114357493571203816, guid: f69481e79e5786e4cbda6382c74d7934,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114357493571203816, guid: f69481e79e5786e4cbda6382c74d7934,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114357493571203816, guid: f69481e79e5786e4cbda6382c74d7934,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1430232785}
+    - target: {fileID: 114357493571203816, guid: f69481e79e5786e4cbda6382c74d7934,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 114357493571203816, guid: f69481e79e5786e4cbda6382c74d7934,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f69481e79e5786e4cbda6382c74d7934, type: 2}
   m_IsPrefabParent: 0
@@ -13471,6 +13501,39 @@ Transform:
   m_PrefabParentObject: {fileID: 4032340645018624, guid: d3056320b145bed42b7e250ae07ee476,
     type: 2}
   m_PrefabInternal: {fileID: 1427510816}
+--- !u!1 &1430232782 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1085827060625948, guid: f69481e79e5786e4cbda6382c74d7934,
+    type: 2}
+  m_PrefabInternal: {fileID: 1307079325}
+--- !u!114 &1430232785 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114456789515716878, guid: f69481e79e5786e4cbda6382c74d7934,
+    type: 2}
+  m_PrefabInternal: {fileID: 1307079325}
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+--- !u!114 &1430232789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1430232782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/TankMove
+  PlayEvent: 1
+  StopEvent: 0
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1001 &1431681673
 Prefab:
   m_ObjectHideFlags: 0
@@ -16438,6 +16501,16 @@ Prefab:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 224581600112213596, guid: 0988314869dcdeb41a595ff851ed2af4,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.00010938385
+      objectReference: {fileID: 0}
+    - target: {fileID: 224786517343182096, guid: 0988314869dcdeb41a595ff851ed2af4,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0988314869dcdeb41a595ff851ed2af4, type: 2}
   m_IsPrefabParent: 0
@@ -16716,23 +16789,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7164f772e11b8d438b3da184e5d0769, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KnowledgeOwner: {fileID: 634311694}
-  ObjectThatShouldBeKnown: {fileID: 2005953371}
+  KnowledgeOwner: {fileID: 0}
+  ObjectThatShouldBeKnown: {fileID: 0}
   OnNeedsHint:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 779375234}
-        m_MethodName: AddMessageFromResource
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 10626d9bb1a53644c9c4fc03815e4538,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: MessageSequence, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1001 &1797364256
