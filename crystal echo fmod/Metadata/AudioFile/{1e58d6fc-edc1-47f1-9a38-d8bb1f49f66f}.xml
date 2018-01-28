@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{1e58d6fc-edc1-47f1-9a38-d8bb1f49f66f}">
+        <property name="assetPath">
+            <value>SNOW_SCRAPE10.WAV</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>0.71857142857142853</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{afbe0aae-4b52-437b-aec7-e2ff79894f1b}</destination>
+        </relationship>
+    </object>
+</objects>

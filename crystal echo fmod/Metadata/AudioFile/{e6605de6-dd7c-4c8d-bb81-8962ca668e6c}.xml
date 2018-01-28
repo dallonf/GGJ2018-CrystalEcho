@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{e6605de6-dd7c-4c8d-bb81-8962ca668e6c}">
+        <property name="assetPath">
+            <value>RocksSetDown_S011FO.754.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>96</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>1.0308645833333334</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{afbe0aae-4b52-437b-aec7-e2ff79894f1b}</destination>
+        </relationship>
+    </object>
+</objects>
