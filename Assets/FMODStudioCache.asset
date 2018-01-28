@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114891328201719972}
-  - {fileID: 114138178408630948}
+  - {fileID: 114244135211352960}
   EditorEvents:
   - {fileID: 114270886043204284}
   - {fileID: 114018545789809212}
@@ -21,9 +21,9 @@ MonoBehaviour:
   - {fileID: 114855140147786730}
   - {fileID: 114725247427871420}
   - {fileID: 114340758284337270}
-  MasterBankRef: {fileID: 114138178408630948}
+  MasterBankRef: {fileID: 114244135211352960}
   StringsBankRef: {fileID: 114891328201719972}
-  stringsBankWriteTime: 636526968582252523
+  stringsBankWriteTime: 636526957825616486
   cacheVersion: 2
 --- !u!114 &114007094056501648
 MonoBehaviour:
@@ -54,15 +54,30 @@ MonoBehaviour:
   Path: event:/ShoutCall
   guid: 392e475e6af73b4caaf8c0f976e7056c
   Banks:
-  - {fileID: 114138178408630948}
+  - {fileID: 114244135211352960}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114298443109588344}
+  - {fileID: 114469496615905088}
   MinDistance: 0
   MaxDistance: 0
   Length: 7000
+--- !u!114 &114076535688537846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: near
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114094865040431346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,7 +92,7 @@ MonoBehaviour:
   Path: event:/PingResponse
   guid: 6cde1880dd20c241a1d0a911279cd210
   Banks:
-  - {fileID: 114138178408630948}
+  - {fileID: 114244135211352960}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -108,6 +123,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114102101864408092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: speed
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114103005998880022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,6 +187,21 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114126841382503754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: menu
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114127810452095476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,7 +235,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 3857664
-  Exists: 1
+  Exists: 0
 --- !u!114 &114142989125883136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +285,25 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114244135211352960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\dallo\Documents\devroot\GGJ2018-CrystalEcho\crystal echo fmod\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636526957825591419
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 3857664
+  Exists: 1
 --- !u!114 &114270886043204284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,12 +318,12 @@ MonoBehaviour:
   Path: event:/TankMove
   guid: 0d1589885b1e4d40a737a3f2ea68bf00
   Banks:
-  - {fileID: 114138178408630948}
+  - {fileID: 114244135211352960}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114805945809097468}
+  - {fileID: 114102101864408092}
   MinDistance: 0
   MaxDistance: 0
   Length: 5000
@@ -294,6 +358,21 @@ MonoBehaviour:
   Max: 1
   Default: 0
 --- !u!114 &114304376427535094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: menu
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114309015334233134
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -352,12 +431,12 @@ MonoBehaviour:
   Path: event:/MenuMusic
   guid: fa7fc2b1ab1b71438c9077b06f508c44
   Banks:
-  - {fileID: 114138178408630948}
+  - {fileID: 114244135211352960}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114691649090501724}
+  - {fileID: 114126841382503754}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -462,6 +541,21 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8000
+--- !u!114 &114469496615905088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: near
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114486561335766738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -672,14 +766,14 @@ MonoBehaviour:
   Path: event:/Music
   guid: ed6d03556544474084792e0b2bdcc542
   Banks:
-  - {fileID: 114138178408630948}
+  - {fileID: 114244135211352960}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114155196813594418}
-  - {fileID: 114879284136701528}
-  - {fileID: 114723329262723626}
+  - {fileID: 114309015334233134}
+  - {fileID: 114076535688537846}
+  - {fileID: 114923980811868154}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -849,7 +943,7 @@ MonoBehaviour:
   Path: event:/Click
   guid: ca7880b4355b0d4396cfc808af06c014
   Banks:
-  - {fileID: 114138178408630948}
+  - {fileID: 114244135211352960}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -929,7 +1023,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: crystal echo fmod\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636526968582252523
+  lastModified: 636526957825616486
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -980,6 +1074,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: menu
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114923980811868154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: health
   Min: 0
   Max: 1
   Default: 0
