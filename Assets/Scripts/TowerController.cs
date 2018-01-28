@@ -1,17 +1,44 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(KnowableObject))]
 public class TowerController : MonoBehaviour 
 {
+    private KnowableObject knowableObject;
 	public GameObject menuController;
+    public Text text;
+    public KnowledgeOwner KnowledgeOwner;
 
-	// Use this for initialization
-	void Start () 
+    private bool hasBeenDiscovered = false;
+
+	void Awake() 
 	{
-		
+        // HACK: I don't really want to configure the KnowledgeOwner
+        // on all these towers, so try to find it
+        if (!KnowledgeOwner)  
+        {
+            KnowledgeOwner = FindObjectOfType<KnowledgeOwner>();
+        }
+        knowableObject = GetComponent<KnowableObject>();
 	}
+
+    void Start() 
+    {
+        KnowledgeOwner.OnDiscoveredObject.AddListener(OnKnowledgeOwnerDiscoveredObj);
+    }
+
+    void OnKnowledgeOwnerDiscoveredObj(KnowableObject discoveredObj) 
+    {
+        if (discoveredObj == knowableObject)
+        {
+            text.text = name;
+            text.gameObject.SetActive(true);
+            hasBeenDiscovered = true;
+        }
+    }
 
     IEnumerator MenuKillTimer()
     {
@@ -23,6 +50,7 @@ public class TowerController : MonoBehaviour
 
 	public void TowerClicked ()
 	{
+        if  (!hasBeenDiscovered) return;
 		if (menuController.activeInHierarchy)
         {
             menuController.SetActive(false);
@@ -40,7 +68,8 @@ public class TowerController : MonoBehaviour
 	{
         StopCoroutine(MenuKillTimer());
         menuController.SetActive(false);
-        //TODO -- stuff when this button is pressed
+        // Ping
+        ExecuteEvents.Execute<IPingable>(knowableObject.gameObject, null, (x, y) => x.Ping(KnowledgeOwner));
     }
 
 	public void Button2Pressed()
