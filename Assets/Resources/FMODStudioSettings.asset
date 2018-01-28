@@ -13,9 +13,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: crystal echo fmod\crystal echo fmod.fspro
-  SourceProjectPathUnformatted: crystal echo fmod\crystal echo fmod.fspro
-  SourceBankPathUnformatted: crystal echo fmod\Build
+  sourceProjectPath: C:\Users\Madgod483\Desktop\crystal echo fmod\Crystal Echo Fix\crystal
+    echo fmod\crystal echo fmod.fspro
+  SourceProjectPathUnformatted: C:\Users\Madgod483\Desktop\crystal echo fmod\Crystal
+    Echo Fix\crystal echo fmod\crystal echo fmod.fspro
+  SourceBankPathUnformatted: C:\Users\Madgod483\Desktop\crystal echo fmod\Crystal
+    Echo Fix\crystal echo fmod\Build
   AutomaticEventLoading: 1
   AutomaticSampleLoading: 0
   ImportType: 0

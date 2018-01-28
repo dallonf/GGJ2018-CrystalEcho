@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System;
 using System.Collections.Generic;
-
 namespace FMODUnity
 {
     [AddComponentMenu("FMOD Studio/FMOD Studio Event Emitter")]
@@ -22,6 +21,7 @@ namespace FMODUnity
 
         private FMOD.Studio.EventDescription eventDescription;
         public  FMOD.Studio.EventDescription EventDescription { get { return eventDescription; } }
+
 
         private FMOD.Studio.EventInstance instance;
         public  FMOD.Studio.EventInstance EventInstance { get { return instance; } }
