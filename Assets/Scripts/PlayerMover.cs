@@ -5,8 +5,10 @@ using UnityEngine;
 // [RequireComponent(typeof(Rigidbody))]
 public class PlayerMover : MonoBehaviour 
 {
-	private Rigidbody rigidbody;
+	private new Rigidbody rigidbody;
 	public float speed = 2.0f;
+
+	private Vector3 lastMovement = Vector3.up;
 
 	private void Awake() 
 	{
@@ -47,6 +49,11 @@ public class PlayerMover : MonoBehaviour
 
 		if (movement.magnitude > Mathf.Epsilon) {
 			rigidbody.velocity = movement * speed;
+			lastMovement = movement;
+		} else {
+			rigidbody.velocity = Vector3.zero;
+			// use the last movement for rotation
+			movement = lastMovement;
 		}
 
 		var angle = Mathf.Atan2(
