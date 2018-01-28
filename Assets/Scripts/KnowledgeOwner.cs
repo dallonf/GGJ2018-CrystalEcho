@@ -7,9 +7,12 @@ public class KnowledgeOwner : MonoBehaviour
 {
 	[System.Serializable]
 	public class PongEvent : UnityEvent<KnowableObject> { }
+	[System.Serializable]
+	public class DiscoveredObjectEvent : UnityEvent<KnowableObject> { }
 	public List<KnowableObject> KnownObjects;
 
 	public PongEvent OnReceivePong;
+	public DiscoveredObjectEvent OnDiscoveredObject;
 
 	public void GainKnowledge(IEnumerable<KnowableObject> objects)
 	{
@@ -24,6 +27,7 @@ public class KnowledgeOwner : MonoBehaviour
 		if (!KnownObjects.Contains(obj))
 		{
 			KnownObjects.Add(obj);
+			OnDiscoveredObject.Invoke(obj);
 		}
 	}
 
