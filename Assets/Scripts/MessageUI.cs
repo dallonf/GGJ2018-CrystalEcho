@@ -24,7 +24,8 @@ public class MessageUI : MonoBehaviour
       {
         var newMessage = MessageSystem.Messages[messagesShown];
         var newText = GameObject.Instantiate(TextPrefab).GetComponent<Text>();
-        newText.GetComponent<RectTransform>().SetParent(ContentGroup);
+        var newTransform = newText.GetComponent<RectTransform>();
+        newTransform.SetParent(ContentGroup, false);
         newText.text = newMessage.Content;
         newText.color = newMessage.Color;
         messagesShown += 1;
