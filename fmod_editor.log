@@ -14,27 +14,128 @@
 [LOG] SystemI::init                            : create the stream thread
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000000004DF14648 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000000006FAB3BB8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
-[LOG] SoundI::release                          : gravel (000000004D58B258)
-[LOG] SoundI::release                          : remove stream samples. (000000004D58B258)
-[LOG] SoundI::release                          :     gravel (000000004D3B3B28)
+[LOG] SystemI::createSoundInternal             : filename =  : mode 02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3794688
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 62976
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000005458F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8123F4F00
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8123F4ED0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8123F4FD0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8123F5080
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003EE51848
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Format has 1 subsounds.
+[LOG] SystemI::createSoundInternal             : Create as FMOD_CREATESAMPLE
+[LOG] SystemI::createSoundInternal             : Multi-sample sound (1 subsounds), create a sample container.
+[LOG] SystemI::createSoundInternal             : creating subsound 0/1
+[LOG] SystemI::createSample                    : mode 02000202 length 10369 samples, lengthbytes 3136
+[LOG] SystemI::createSample                    : channels = 2
+[LOG] SystemI::createSample                    : output = 000000003F29ABA8
+[LOG] OutputSoftware::createSample             : lengthpcm 10369, lengthbytes 3136, channels 2, format 2, freq 48000, mode 0200020a
+[LOG] SystemI::createSoundInternal             : No name found in file, use filename.
+[LOG] SystemI::createSoundInternal             : done.  OpenState now = FMOD_OPENSTATE_READY.
+
+[LOG] SoundI::release                          :  (000000006F8E3468)
+[LOG] SoundI::release                          : release subsounds. (000000006F8E3468)
+[LOG] SoundI::release                          :     lead1 (000000004771DB38)
 [LOG] SoundI::release                          :     done
-[LOG] SoundI::release                          : release subsounds. (000000004D58B258)
-[LOG] SoundI::release                          :     gravel (0000000022BAC3E8)
-[LOG] SoundI::release                          :     done
-[LOG] SoundI::release                          : release codec. (000000004D58B258)
+[LOG] SoundI::release                          : release codec. (000000006F8E3468)
 [LOG] SoundI::release                          : done
-[LOG] SoundI::release                          :  (000000004E176B28)
-[LOG] SoundI::release                          : release subsounds. (000000004E176B28)
-[LOG] SoundI::release                          :     tankloop (000000004D3B5D48)
+[LOG] SoundI::release                          :  (000000006F8E3188)
+[LOG] SoundI::release                          : release subsounds. (000000006F8E3188)
+[LOG] SoundI::release                          :     lead2 (000000004771E1B8)
 [LOG] SoundI::release                          :     done
-[LOG] SoundI::release                          : release codec. (000000004E176B28)
+[LOG] SoundI::release                          : release codec. (000000006F8E3188)
+[LOG] SoundI::release                          : done
+[LOG] SoundI::release                          :  (000000006F8E2A58)
+[LOG] SoundI::release                          : release subsounds. (000000006F8E2A58)
+[LOG] SoundI::release                          :     lead3 (000000004771D7F8)
+[LOG] SoundI::release                          :     done
+[LOG] SoundI::release                          : release codec. (000000006F8E2A58)
+[LOG] SoundI::release                          : done
+[LOG] SoundI::release                          :  (000000006F8E21B8)
+[LOG] SoundI::release                          : release subsounds. (000000006F8E21B8)
+[LOG] SoundI::release                          :     lead4 (000000004771FBB8)
+[LOG] SoundI::release                          :     done
+[LOG] SoundI::release                          : release codec. (000000006F8E21B8)
+[LOG] SoundI::release                          : done
+[LOG] SoundI::release                          :  (000000006F8E1ED8)
+[LOG] SoundI::release                          : release subsounds. (000000006F8E1ED8)
+[LOG] SoundI::release                          :     lead5 (000000004771E9D8)
+[LOG] SoundI::release                          :     done
+[LOG] SoundI::release                          : release codec. (000000006F8E1ED8)
+[LOG] SoundI::release                          : done
+[LOG] SoundI::release                          :  (000000006F8E2EA8)
+[LOG] SoundI::release                          : release subsounds. (000000006F8E2EA8)
+[LOG] SoundI::release                          :     lead6 (000000004771DE78)
+[LOG] SoundI::release                          :     done
+[LOG] SoundI::release                          : release codec. (000000006F8E2EA8)
+[LOG] SoundI::release                          : done
+[LOG] SoundI::release                          :  (000000006F8E2778)
+[LOG] SoundI::release                          : release subsounds. (000000006F8E2778)
+[LOG] SoundI::release                          :     kick (0000000047720BF8)
+[LOG] SoundI::release                          :     done
+[LOG] SoundI::release                          : release codec. (000000006F8E2778)
+[LOG] SoundI::release                          : done
+[LOG] SoundI::release                          :  (000000006F8E2BC8)
+[LOG] SoundI::release                          : release subsounds. (000000006F8E2BC8)
+[LOG] SoundI::release                          :     chords1 (000000004771DCD8)
+[LOG] SoundI::release                          :     done
+[LOG] SoundI::release                          : release codec. (000000006F8E2BC8)
+[LOG] SoundI::release                          : done
+[LOG] SoundI::release                          :  (000000006F8E2498)
+[LOG] SoundI::release                          : release subsounds. (000000006F8E2498)
+[LOG] SoundI::release                          :     chords2 (0000000047721418)
+[LOG] SoundI::release                          :     done
+[LOG] SoundI::release                          : release codec. (000000006F8E2498)
+[LOG] SoundI::release                          : done
+[LOG] SoundI::release                          :  (000000006F8E2608)
+[LOG] SoundI::release                          : release subsounds. (000000006F8E2608)
+[LOG] SoundI::release                          :     chords3 (000000004771E4F8)
+[LOG] SoundI::release                          :     done
+[LOG] SoundI::release                          : release codec. (000000006F8E2608)
+[LOG] SoundI::release                          : done
+[LOG] SoundI::release                          :  (000000006F8E2D38)
+[LOG] SoundI::release                          : release subsounds. (000000006F8E2D38)
+[LOG] SoundI::release                          :     chords4 (00000000477203D8)
+[LOG] SoundI::release                          :     done
+[LOG] SoundI::release                          : release codec. (000000006F8E2D38)
+[LOG] SoundI::release                          : done
+[LOG] SoundI::release                          :  (000000006F8E28E8)
+[LOG] SoundI::release                          : release subsounds. (000000006F8E28E8)
+[LOG] SoundI::release                          :     chords5 (0000000047720098)
+[LOG] SoundI::release                          :     done
+[LOG] SoundI::release                          : release codec. (000000006F8E28E8)
+[LOG] SoundI::release                          : done
+[LOG] SoundI::release                          :  (000000006F8E2328)
+[LOG] SoundI::release                          : release subsounds. (000000006F8E2328)
+[LOG] SoundI::release                          :     chords6 (000000004771F398)
+[LOG] SoundI::release                          :     done
+[LOG] SoundI::release                          : release codec. (000000006F8E2328)
+[LOG] SoundI::release                          : done
+[LOG] SoundI::release                          :  (000000006F8E3018)
+[LOG] SoundI::release                          : release subsounds. (000000006F8E3018)
+[LOG] SoundI::release                          :     chords7 (000000004771E018)
+[LOG] SoundI::release                          :     done
+[LOG] SoundI::release                          : release codec. (000000006F8E3018)
+[LOG] SoundI::release                          : done
+[LOG] SoundI::release                          :  (000000006F8E32F8)
+[LOG] SoundI::release                          : release subsounds. (000000006F8E32F8)
+[LOG] SoundI::release                          :     click (000000004771ED18)
+[LOG] SoundI::release                          :     done
+[LOG] SoundI::release                          : release codec. (000000006F8E32F8)
 [LOG] SoundI::release                          : done
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
@@ -53,23 +154,5 @@
 [LOG] SystemI::close                           : Free software output.
 [LOG] SystemI::close                           : Free emulated output.
 [LOG] SystemI::close                           : Free channel pool.
-[LOG] SystemI::close                           : done.
-
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] SystemI::close                           : 
-[LOG] SystemI::close                           : Stop all sounds
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] SystemI::close                           : Stream thread destroyed
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] SystemI::close                           : Free master channel group.
-[LOG] SystemI::close                           : Remove 'master' sound group.
-[LOG] SystemI::close                           : Free software output.
-[LOG] SystemI::close                           : Free emulated output.
-[LOG] SystemI::close                           : Free channel pool.
-[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
-[LOG] Thread::callback                         : FMOD file thread finished.
 [LOG] SystemI::close                           : done.
 
