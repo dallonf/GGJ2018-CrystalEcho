@@ -9,7 +9,6 @@ public class MessageUI : MonoBehaviour
   public ScrollRect ScrollRect;
   public RectTransform ContentGroup;
   public float CharTime = 0.1f;
-  public float MessageTime = 1;
 
   private int messagesShown = 0;
 
@@ -39,7 +38,6 @@ public class MessageUI : MonoBehaviour
           ScrollRect.verticalNormalizedPosition = 0;
         }
         messagesShown += 1;
-        yield return new WaitForSeconds(MessageTime);
       }
       yield return null;
     }
