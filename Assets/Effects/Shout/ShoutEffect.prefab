@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4033965186077896}
   - component: {fileID: 120614260926848106}
   - component: {fileID: 114078517115932044}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Ring2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4612646507111366}
   - component: {fileID: 120254905946201250}
   - component: {fileID: 114445360603012782}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Ring1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 4981173748939782}
   - component: {fileID: 95778362596051484}
   - component: {fileID: 114957739287163032}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ShoutEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
