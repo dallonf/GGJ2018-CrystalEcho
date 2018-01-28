@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{75072ca8-9230-409f-aec8-e4d955efb41d}">
+        <property name="assetPath">
+            <value>cave_drip_09.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>1.8111458333333332</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{afbe0aae-4b52-437b-aec7-e2ff79894f1b}</destination>
+        </relationship>
+    </object>
+</objects>
