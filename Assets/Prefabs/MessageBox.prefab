@@ -150,7 +150,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 7ab2a148fa297a544b6764118bb35bdf, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -257,7 +257,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1859627312382272}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -293,6 +293,7 @@ MonoBehaviour:
   TextPrefab: {fileID: 1629905548782454, guid: 89b7e8de335b30b4aa3bac70f8f9151c, type: 2}
   ScrollRect: {fileID: 114414573452637430}
   ContentGroup: {fileID: 224948532430133728}
+  CharTime: 0.1
 --- !u!114 &114806534467636858
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -480,8 +481,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 20}
+  m_AnchoredPosition: {x: -2.37, y: 0}
+  m_SizeDelta: {x: 15.26, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224893116346010018
 RectTransform:
