@@ -2358,6 +2358,12 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   HasBeenTriggered: 0
+--- !u!114 &294684038 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114567958042742856, guid: 4b9e89c3917966740905eb559286c054,
+    type: 2}
+  m_PrefabInternal: {fileID: 1457874619}
+  m_Script: {fileID: 11500000, guid: c70b84189fb2b994f97752e5c979feec, type: 3}
 --- !u!1 &295613149
 GameObject:
   m_ObjectHideFlags: 0
@@ -3430,6 +3436,75 @@ Transform:
   m_PrefabParentObject: {fileID: 4032340645018624, guid: d3056320b145bed42b7e250ae07ee476,
     type: 2}
   m_PrefabInternal: {fileID: 418522595}
+--- !u!1 &431776082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 431776083}
+  - component: {fileID: 431776084}
+  m_Layer: 0
+  m_Name: 00300_colin_shout
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &431776083
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 431776082}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1678971992}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &431776084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 431776082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f497c2c9b1be6d641b42e0f6ceef7d9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 779375234}
+        m_MethodName: AddMessageFromResource
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 9446536b54447d3489fb125121ddaadf,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: MessageSequence, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 634311694}
+        m_MethodName: GainKnowledge
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2005953371}
+          m_ObjectArgumentAssemblyTypeName: KnowableObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  HasBeenTriggered: 0
 --- !u!1001 &433984623
 Prefab:
   m_ObjectHideFlags: 0
@@ -7462,6 +7537,11 @@ Prefab:
       propertyPath: Fingers.Array.size
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 114873496748435082, guid: 4b9e89c3917966740905eb559286c054,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4095186140709366, guid: 4b9e89c3917966740905eb559286c054, type: 2}
       propertyPath: m_LocalPosition.x
       value: 343.1
@@ -7595,6 +7675,31 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_LocalPosition.z
       value: 0.52999985
+      objectReference: {fileID: 0}
+    - target: {fileID: 114873496748435082, guid: 4b9e89c3917966740905eb559286c054,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114873496748435082, guid: 4b9e89c3917966740905eb559286c054,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114873496748435082, guid: 4b9e89c3917966740905eb559286c054,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1998737387}
+    - target: {fileID: 114873496748435082, guid: 4b9e89c3917966740905eb559286c054,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: Trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 114873496748435082, guid: 4b9e89c3917966740905eb559286c054,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b9e89c3917966740905eb559286c054, type: 2}
@@ -8795,6 +8900,11 @@ Prefab:
       propertyPath: Fingers.Array.size
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 114873496748435082, guid: 4b9e89c3917966740905eb559286c054,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4095186140709366, guid: 4b9e89c3917966740905eb559286c054, type: 2}
       propertyPath: m_LocalPosition.x
       value: 365.5
@@ -8928,6 +9038,31 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_LocalPosition.z
       value: 0.5099999
+      objectReference: {fileID: 0}
+    - target: {fileID: 114873496748435082, guid: 4b9e89c3917966740905eb559286c054,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114873496748435082, guid: 4b9e89c3917966740905eb559286c054,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114873496748435082, guid: 4b9e89c3917966740905eb559286c054,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1478887465}
+    - target: {fileID: 114873496748435082, guid: 4b9e89c3917966740905eb559286c054,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: Trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 114873496748435082, guid: 4b9e89c3917966740905eb559286c054,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b9e89c3917966740905eb559286c054, type: 2}
@@ -13873,6 +14008,11 @@ Prefab:
       propertyPath: Fingers.Array.size
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 114873496748435082, guid: 4b9e89c3917966740905eb559286c054,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4095186140709366, guid: 4b9e89c3917966740905eb559286c054, type: 2}
       propertyPath: m_LocalPosition.x
       value: 173
@@ -14011,6 +14151,31 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_LocalPosition.z
       value: 0.52999985
+      objectReference: {fileID: 0}
+    - target: {fileID: 114873496748435082, guid: 4b9e89c3917966740905eb559286c054,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114873496748435082, guid: 4b9e89c3917966740905eb559286c054,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114873496748435082, guid: 4b9e89c3917966740905eb559286c054,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 431776084}
+    - target: {fileID: 114873496748435082, guid: 4b9e89c3917966740905eb559286c054,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: Trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 114873496748435082, guid: 4b9e89c3917966740905eb559286c054,
+        type: 2}
+      propertyPath: OnShout.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b9e89c3917966740905eb559286c054, type: 2}
@@ -14188,6 +14353,64 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1478887463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1478887464}
+  - component: {fileID: 1478887465}
+  m_Layer: 0
+  m_Name: 00400_danielle_shout
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1478887464
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1478887463}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1678971992}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1478887465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1478887463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f497c2c9b1be6d641b42e0f6ceef7d9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 779375234}
+        m_MethodName: AddMessageFromResource
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: c4275aeb59a73fd448eab3f386fcb1ce,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: MessageSequence, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  HasBeenTriggered: 0
 --- !u!1001 &1515050941
 Prefab:
   m_ObjectHideFlags: 0
@@ -15898,6 +16121,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 291495521}
+  - {fileID: 1998737386}
+  - {fileID: 431776083}
+  - {fileID: 1478887464}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18322,6 +18548,81 @@ Transform:
   m_PrefabParentObject: {fileID: 4032340645018624, guid: d3056320b145bed42b7e250ae07ee476,
     type: 2}
   m_PrefabInternal: {fileID: 1992427556}
+--- !u!1 &1998737385
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1998737386}
+  - component: {fileID: 1998737387}
+  m_Layer: 0
+  m_Name: 00200_bonnie_shout
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1998737386
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1998737385}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1678971992}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1998737387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1998737385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f497c2c9b1be6d641b42e0f6ceef7d9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 779375234}
+        m_MethodName: AddMessageFromResource
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 80885d249ea3b5d4295d6911f4b261ae,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: MessageSequence, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 634311694}
+        m_MethodName: GainKnowledge
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 294684038}
+          m_ObjectArgumentAssemblyTypeName: KnowableObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  HasBeenTriggered: 0
+--- !u!114 &2005953371 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114567958042742856, guid: 4b9e89c3917966740905eb559286c054,
+    type: 2}
+  m_PrefabInternal: {fileID: 974955381}
+  m_Script: {fileID: 11500000, guid: c70b84189fb2b994f97752e5c979feec, type: 3}
 --- !u!4 &2015838092 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4867471012899286, guid: cb3ca933576a12e448bb5c1048e2559f,
