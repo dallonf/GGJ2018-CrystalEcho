@@ -8,9 +8,10 @@ public class TriggerEventOnce : MonoBehaviour
 
   public void Trigger()
   {
-    if (!HasBeenTriggered) {
-    Event.Invoke();
-    HasBeenTriggered = true;
+    if (!HasBeenTriggered)
+    {
+      Event.Invoke();
+      HasBeenTriggered = true;
     }
   }
 }
