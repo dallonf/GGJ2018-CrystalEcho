@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a1018f495c35b479a28e5d3e12760e, type: 3}
+  m_Name: 00110_tutorial_ping
+  m_EditorClassIdentifier: 
+  Paragraphs:
+  - Click a tower's name in the sidebar to ping them.
+  - This will cause them to light up and show you where they are.
