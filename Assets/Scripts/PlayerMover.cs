@@ -10,13 +10,11 @@ public class PlayerMover : MonoBehaviour {
 
 	void Start () 
 	{
-		movement = new Vector3 (0f, 0f, 0f);
+		movement = new Vector3 ();
 	}
 
 	void Update ()
 	{
-		movement.Set(0f, 0f, 0f);
-
 		if (Input.GetKey (KeyCode.W) || Input.GetKey (KeyCode.UpArrow))
 		{
 			transform.position += Vector3.up * speed * Time.deltaTime;
